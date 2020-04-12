@@ -20,7 +20,7 @@ function startGame() {
 //.............Display virus.....................................
 function showVirus() {
   var virus = document.querySelector(randomVirus(arr_virus));
-      time = randomTime(500, 1000);
+      time = randomTime(500, 1500);
 
   //get the height and width and display across browser
   var fullWidth = document.body.clientWidth - 100;
