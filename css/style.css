@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(162, 233, 185);
+    height: 80vh;
+    /*background-image: url(https://pluspng.com/img-png/map-of-the-world-png-hd-click-on-the-world-map-dotted-black-3364.png);*/
+    background-image: url(../assets/map-of-the-world-png-hd-click-on-the-world-map-dotted-black-3364.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    background-color: rgb(150, 230, 30);
+    height: 8vh;
+}
+.board{
+    display: flex;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: thistle;
+}
+
+#how-play{
+    margin-left: 5%;
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    
+}
+.play a{
+    text-decoration: none;
+    color: orangered;
+    
+}
+p{
+    color: thistle;
+}

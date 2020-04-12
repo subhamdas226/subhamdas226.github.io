@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body><div class="title">
+        <span>Sanitize the Virus</span> 
+    </div>
+    <div class="board">
+        <div class="timer">10</div>
+        <div class="score"><span>0</span></div> 
+        <!--- <button type="button" name="start" onclick="startGame();">Start!</button>   --->
+        <div class="play" onclick="startGame(); document.getElementById('how-play').style.display = 'none';" ><a href="#">Start</a></div>
+    </div>
+    <div class="container">
+            <div class="game-play">
+                <img src="assets/corona1.png" class="virus1" style="width: 100px; height: 100px; display: none;" onclick="scoreCorona() ">
+                <img src="assets/sars1.png" class="virus2" style="width: 140px; height: 100px; display: none;" onclick="scoreSars()">
+                <img src="assets/virus1.png" class="virus3" style="width: 140px; height: 100px; display: none;" onclick="scoreFlu()">
+                <img src="assets/good-virus.webp" class="virus4" style="width: 100px; height: 100px; display: none;" onclick="scoreGoodVirus()">
+                <img src="assets/star.png"  class="virus5" style="width: 100px; height: 100px; display: none;" onclick="timeStar()">    
+            </div>   
+            <div id="how-play">	
+                <div>
+                    <div class="virus">
+                        <img src="assets/corona1.png" style="width: 20%; height: 20%;">
+                    </div>
+                    <p>Consists 50 points</p>
+                </div>
+                <div>
+                    <div class="virus">
+                        <img src="assets/sars1.png"  style="width: 20%; height: 20%;">
+                    </div>
+                    <p> Consists 30 points</p>
+                </div>
+                <div>
+                    <div class="virus">
+                        <img src="assets/virus1.png"  style="width: 20%; height: 20%;">
+                    </div>
+                    <p> Consists 10 points</p>
+                </div>
+                <div>
+                    <div class="virus">
+                        <img src="assets/good-virus.webp" style="width: 15%; height: 15%;">
+                    </div>
+                    <p> Consists -30 points</p>
+                </div>
+                <div>
+                    <div class="virus">
+                        <img src="assets/star.png" alt="star" style="width: 15%; height: 15%;">
+                    </div>
+                    <p>Consists Time Bonus</p>
+                </div>
+            </div>
+    </div> 
+    
+</body>
+</html>     
