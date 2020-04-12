@@ -9,7 +9,7 @@ let score = 0;
 
 //...........StartGame..........................................
 function startGame() {
-  playTime = 10;
+  playTime = 30;
   var scoreBoard = document.querySelector('.score span');
   scoreBoard.textContent = 0;
   score = 0;
